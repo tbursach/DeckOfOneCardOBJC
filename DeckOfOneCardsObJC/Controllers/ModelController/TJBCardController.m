@@ -36,7 +36,7 @@ static NSString * const countEndpoint = @"count";
             return completion(nil, error);
         }
 
-        if (data)
+        if (!data)
         {
             NSLog(@"There appears to be no data.");
             return completion(nil, error);
